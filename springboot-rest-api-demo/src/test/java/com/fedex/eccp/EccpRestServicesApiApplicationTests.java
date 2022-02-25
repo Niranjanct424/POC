@@ -1,0 +1,13 @@
+package com.fedex.eccp;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class EccpRestServicesApiApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

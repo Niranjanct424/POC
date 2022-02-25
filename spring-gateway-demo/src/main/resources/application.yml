@@ -1,0 +1,21 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9111/eureka/
+server:
+   port: 9000
+spring:
+  application:
+    name: gateway-service-demo
+  cloud:
+    gateway:
+      routes:
+        - id: eccp-rest-services-api
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/sample/**
+management:
+   security:
+      enabled: false
