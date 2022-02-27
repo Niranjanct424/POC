@@ -13,9 +13,17 @@ public class MessageRestController {
 
 	@Value("${message:Config Server is not working. Please check...}")
 	private String msg;
+	
+	@Value("${server.port}")
+	private String port;
 
 	@GetMapping("/msg")
 	public String getMsg() {
 		return this.msg;
+	}
+	
+	@GetMapping("/greet")
+	public String getGreet() {
+		return "greet service running in port "+port;
 	}
 }

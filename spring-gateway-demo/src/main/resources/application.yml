@@ -13,7 +13,7 @@ spring:
     gateway:
       routes:
         - id: eccp-rest-services-api
-          uri: http://localhost:8082/
+          uri: lb://SPRINGBOOT-REST-API-DEMO
           predicates:
             - Path=/sample/**
 management:
