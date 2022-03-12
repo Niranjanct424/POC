@@ -1,0 +1,9 @@
+spring:
+   application:
+      name: eccp-spring-boot-admin
+   security:
+      user:
+         name: eccpteam
+         password: eccpteam@123
+server:
+   port: 9080
