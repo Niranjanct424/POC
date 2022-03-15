@@ -1,0 +1,36 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: 'false'
+    fetch-registry: 'false'
+    serviceUrl:
+      defaultZone: http://localhost:9010/eureka/
+spring:
+  boot:
+    admin:
+      client:
+        instance:
+          prefer-ip: 'true'
+        url: http://localhost:9080
+        username: eccpteam
+        password: eccpteam@123
+  application:
+    name: eccp-eureka-server
+info:
+  version: 1.0.1
+  description: Eureka Discovery service resister all the spring boot services to dashboard
+  name: eccp-eureka-server
+logging:
+  file:
+    path: C://logfiles//eccp-eureka-server.log
+server:
+  port: '9010'
