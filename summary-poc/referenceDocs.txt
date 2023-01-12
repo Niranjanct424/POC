@@ -1,0 +1,3 @@
+https://howtodoinjava.com/java8/collect-stream-to-map/
+https://www.javachinna.com/make-multiple-parallel-rest-api-calls/
+https://www.javachinna.com/java-8-stream-functions-with-examples/
