@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Template</title>
+</head>
+<body>
+    <h1>Update Credit Line Score</h1>
+    <p>Dear [Name],</p>
+    <p>We are pleased to inform you that your credit line score has been updated. Please click the button below to view your updated score:</p>
+    <a th:href="@{http://example.com/update-credit-line}" th:text="View Updated Score" th:target="_blank"></a>
+</body>
+</html>

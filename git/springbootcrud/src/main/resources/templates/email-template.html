@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${emailSubject}"></title>
+</head>
+<body>
+    <h1>Dear <span th:text="${recipientName}"></span>,</h1>
+    <p th:text="${emailBody}"></p>
+</body>
+</html>
